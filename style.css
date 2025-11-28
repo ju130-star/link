@@ -1,0 +1,133 @@
+:root {
+    --verde-agua: #A7E8E4;
+    --verde-jade: #48CFCB;
+    --verde-escuro: #107A73;
+    --off-white: #FAFAFA;
+    --rosa-cha: #F7CAC9;
+
+    --fonte-titulo: "Playfair Display", serif;
+    --fonte-corpo: "Inter", sans-serif;
+    --fonte-destaque: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-corpo);
+    background: var(--verde-agua);
+    color: var(--verde-escuro);
+    overflow-x: hidden;
+}
+
+/* ====== HEADER ====== */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, var(--verde-agua), var(--verde-jade));
+    color: var(--verde-escuro);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3.2rem;
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 1.4rem;
+    font-family: var(--fonte-destaque);
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+/* ===== CARD GERAL ===== */
+.card {
+    background: var(--off-white);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    transition: 0.3s ease;
+    font-family: var(--fonte-corpo);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    font-size: 1.9rem;
+    margin-bottom: 15px;
+    font-family: var(--fonte-destaque);
+    color: var(--verde-escuro);
+    letter-spacing: 0.5px;
+}
+
+/* ===== FOTO ===== */
+.foto-grupo {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    margin: 20px auto;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.foto-container {
+    padding: 20px;
+    background: var(--off-white);
+    border-radius: 20px;
+    border: 2px dashed var(--verde-jade);
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* ===== CARDS TECNOLOGIAS ===== */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card h3 {
+    color: var(--verde-jade);
+    font-size: 22px;
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 6px 0;
+    font-size: 15px;
+    font-family: var(--fonte-corpo);
+}
+
+.tech-item i {
+    color: var(--verde-jade);
+    font-size: 18px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    font-family: var(--fonte-corpo);
+}
